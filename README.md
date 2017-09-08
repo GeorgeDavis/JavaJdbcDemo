@@ -1,2 +1,2 @@
 # JavaJdbcDemo
-I am java developer trying to learn JDBC DAO implementation
+I am a java developer trying to learn JDBC DAO implementation
