@@ -1,2 +1,2 @@
 # JavaJdbcDemo
-This is a java application that uses the JDBC implementation 
+I am a java developer trying to learn JDBC DAO implementation
