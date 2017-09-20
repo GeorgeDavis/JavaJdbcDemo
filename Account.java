@@ -1,15 +1,15 @@
 package org.davis.model;
 
+  /*----------------------------------------------------------------
+  * A simple Account class that has the constructor, getters, and
+  * setters...
+  -------------------------------------------------------------------*/
+
 public class Account {
 	private String branch_name;
 	private int account_number;
 	private double balance;
   
-  /*----------------------------------------------------------------
-  * A simple Account class that has the constructor, getters, and
-  * setters...
-  -------------------------------------------------------------------*/
-	
 	public Account(int account_number, String branch_name,double balance)
 	{
 		this.account_number = account_number;
@@ -28,6 +28,7 @@ public class Account {
 	public String getBranch_name() {
 		return branch_name;
 	}
+	
 	public void setBranch_name(String branch_name) {
 		this.branch_name = branch_name;
 	}
@@ -35,6 +36,7 @@ public class Account {
 	public double getBalance() {
 		return balance;
 	}
+	
 	public void setBalance(double balance) {
 		this.balance = balance;
 	}
