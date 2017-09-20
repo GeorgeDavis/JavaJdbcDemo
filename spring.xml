@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	 http://www.springframework.org/schema/beans/spring-beans.xsd 
+	 http://www.springframework.org/schema/context 
+	 http://www.springframework.org/schema/context/spring-context.xsd"
+	xmlns:context="http://www.springframework.org/schema/context">
+	
+	<context:annotation-config/>
+	
+	<context:component-scan base-package="org.davis.dao" />
+	
+	<!-- Here we have initialized the connection to the db through Spring instead of connecting in the JdbcDAOImpl class -->   
+	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value ="org.apache.derby.jdbc.ClientDriver" />
+		<property name="url" value ="jdbc:derby://localhost:1527/db;create=true" />
+	</bean>	
+  
+</beans>
